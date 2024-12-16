@@ -14,7 +14,7 @@ export default function WeatherApp() {
       
         const loadWeatherData = async (city) => {
           try {
-            const response = await axios.get(`http://localhost:8080/getWeather/${city}`);
+            const response = await axios.get(`https://weatherapp-backend-th0q.onrender.com/${city}`);
             console.log(response.data);
             setWeatherData(response.data); // Update state with search results
           } catch (error) {
